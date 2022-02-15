@@ -75,13 +75,8 @@ PizzaBlock.propTypes = {
   name: propTypes.string.isRequired,
   imageUrl: propTypes.string.isRequired,
   price: propTypes.number.isRequired,
-  types: propTypes.arrayOf([propTypes.number]).isRequired,
-  sizes: propTypes.arrayOf([propTypes.number]).isRequired,
-};
-
-PizzaBlock.defaultProps = {
-  types: [],
-  sizes: [],
+  types: propTypes.array.isRequired,
+  sizes: propTypes.array.isRequired,
 };
 
 export default PizzaBlock;
